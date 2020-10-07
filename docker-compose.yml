@@ -1,0 +1,30 @@
+version: "3"
+services:
+ web:
+    image: security-oauth2:v1
+    container_name: security-oauth2
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE:-dsv}
+      - SPRING_DATASOURCE.URL=jdbc:postgresql://db:5432/security-oauth2
+    ports: 
+      - '8080:8080'
+    networks:
+      - security-oauth2-network
+    depends_on: db
+ db: 
+    image: postgres:latest
+    ports:
+      - 5432
+    environment:
+         - POSTGRES_PASSWORD=root
+         - POSTGRES_USER=postgres
+         - POSTGRES_DB=security-oauth2
+    networks:
+      - security-oauth2-network
+   
+networks:
+ security-oauth2-network:
+   driver: bridge
