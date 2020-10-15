@@ -1,4 +1,4 @@
-package com.istio.security.oauth2.controller;
+package com.security.oauth2.controller;
 
 import java.util.Map;
 

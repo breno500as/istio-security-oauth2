@@ -1,4 +1,4 @@
-package com.istio.security.oauth2.configuration;
+package com.security.oauth2.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.core.io.Resource;

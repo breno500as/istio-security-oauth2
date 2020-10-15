@@ -1,4 +1,4 @@
-package com.istio.security.oauth2.configuration;
+package com.security.oauth2.configuration;
 
 import javax.sql.DataSource;
 

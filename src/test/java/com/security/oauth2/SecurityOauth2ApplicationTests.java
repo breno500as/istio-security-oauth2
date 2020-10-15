@@ -1,10 +1,10 @@
-package com.istiosecurityoauth2;
+package com.security.oauth2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class IstioSecurityOauth2ApplicationTests {
+class SecurityOauth2ApplicationTests {
 
 	@Test
 	void contextLoads() {

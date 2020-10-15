@@ -8,10 +8,10 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.istio-security-oauth2</groupId>
-	<artifactId>istio-security-oauth2</artifactId>
+	<groupId>com.security-oauth2</groupId>
+	<artifactId>security-oauth2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>istio-security-oauth2</name>
+	<name>security-oauth2</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -19,7 +19,7 @@
 	</properties>
 
 		<build>
-		<finalName>istio-security-oauth2</finalName>
+		<finalName>security-oauth2</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
